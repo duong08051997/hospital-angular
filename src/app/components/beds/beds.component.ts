@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {BedService} from '../../../services/bed.service';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-beds',
@@ -19,4 +20,5 @@ getAll(): any{
       console.log(data);
     });
 }
+
 }

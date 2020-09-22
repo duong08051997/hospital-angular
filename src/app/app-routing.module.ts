@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {BedsComponent} from './components/beds/beds.component';
-import {MasterComponent} from './layouts/master/master.component';
+import {RoomsComponent} from './components/rooms/rooms.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'master', pathMatch: 'full'},
@@ -10,7 +10,13 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: BedsComponent
+        component: RoomsComponent,
+        children: [
+          {
+            path: '',
+            component: BedsComponent
+          }
+        ]
       },
     ]
   },

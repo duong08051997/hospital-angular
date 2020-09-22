@@ -1,1 +1,27 @@
-<p>rooms works!</p>
+<div class="col-md-12" style="margin-bottom: 15px ;background-color: white" *ngFor="let room of rooms">
+ {{room.name}}
+  <div class="col-md-12">
+    <div style="font-size: 20px;color:#800000">
+    </div>
+  <fieldset class="">
+    <div class="row" >
+      <div class="col-md-1" *ngFor="let bed of beds" >
+        <a href=""
+           class="hoverMe" data-placement="right"  >
+          <div>
+            <div class="bedgreeen" *ngIf="room.id === bed.room_id">
+              <i class="fa fa-bed"
+                 style="font-size: 60px;color : green;">
+              </i>
+              <div class="patientName"
+                   style="font-size: 20px ;color: green;">
+                {{bed.name}}
+            </div>
+          </div>
+      </div>
+      </a>
+    </div>
+</div>
+</fieldset>
+</div>
+</div>
