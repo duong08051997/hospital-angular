@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "hospital-bed-manager"
+    }
+  },
+  "defaultProject": "hospital-bed-manager",
+  "cli": {
+    "analytics": "8c09c8b1-b4ba-483f-b16a-9b97b251cddc"
+  }
 }

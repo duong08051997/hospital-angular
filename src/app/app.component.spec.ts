@@ -23,13 +23,13 @@ describe('AppComponent', () => {
   it(`should have as title 'hospital-bed-manager'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('hospital-bed-manager');
+    expect(app.title).toEqual('hospital-angular');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('hospital-bed-manager app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('hospital-angular app is running!');
   });
 });
